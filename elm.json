@@ -1,0 +1,19 @@
+{
+    "type": "package",
+    "name": "mathiajusth/form-validation",
+    "summary": "Transform user's input into data definition or fail with error information",
+    "license": "BSD-3-Clause",
+    "version": "1.0.0",
+    "exposed-modules": [ "Validation" ],
+    "elm-version": "0.19.0 <= v < 0.20.0",
+    "dependencies": {
+        "elm/core": "1.0.0 <= v < 2.0.0",
+        "elm-community/list-extra": "8.5.2 <= v < 9.0.0",
+        "elm-community/maybe-extra": "5.3.0 <= v < 6.0.0",
+        "elm-community/result-extra": "2.4.0 <= v < 3.0.0",
+        "elm-community/string-extra": "4.0.1 <= v < 5.0.0",
+        "krisajenkins/remotedata": "6.0.1 <= v < 7.0.0",
+        "MartinSStewart/elm-nonempty-string": "2.0.0 <= v < 3.0.0"
+    },
+    "test-dependencies": {}
+}
