@@ -1,6 +1,6 @@
 module Validation exposing (..)
 
-import Library.Dict.Nonempty as NonemptyDict exposing (NonemptyDict)
+import Dict.Nonempty as NonemptyDict exposing (NonemptyDict)
 import List.Extra as List
 import Maybe.Extra as Maybe
 import RemoteData exposing (RemoteData)
@@ -175,7 +175,7 @@ field getContext validateField ( fieldIndex, validateFieldToRecord ) =
 
 simplifyRecordError : RecordValidation e i r -> Validation e i r
 simplifyRecordError =
-    mapError NonemptyDict.head
+    mapError (NonemptyDict.head >> Tuple.second)
 
 
 
